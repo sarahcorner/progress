@@ -1,0 +1,64 @@
+.box {  
+    cursor: pointer;  
+    float: left;  
+    margin: 5px;  
+    padding: 15px;
+    position: relative;  
+    overflow: hidden;  
+    width: 130px;  
+}  
+
+div {
+	align-content: center;
+	text-align: center;
+	vertical-align: center;
+}
+  
+.box img {  
+    position: absolute;  
+    left: 0;  
+    transition: all 300ms ease-out;  
+} 
+
+.box .caption {  
+    background-color: #E7E7E7;  
+    position: absolute;  
+    color: #000;  
+    z-index: 99;  
+    transition: all 300ms ease-out;  
+    border-style: solid;
+}  
+
+
+.box .slide-caption {  
+    width: 130px;   
+    text-align: left;  
+    padding: 15px;  
+    left: 200px;  
+    font-size: 10pt;
+    border-style: solid;
+}  
+
+.box:hover .slide-caption {  
+  background-color: #fff !important; 
+  -moz-transform: translateX(-100%);  
+  -o-transform: translateX(-100%);  
+  -webkit-transform: translateX(-100%);  
+  opacity: 1;  
+  transform: translateX(-115%);  
+}  
+
+
+h3 {
+	padding-bottom: 15px;
+	border-bottom: solid;
+	z-index: 100;
+}
+
+
+/* POPULAR HOVER OPTION */
+
+
+
+
+
