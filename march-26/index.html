@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/reset.css" /> <!-- default reset css file: do not touch -->
+		<link rel="stylesheet" href="css/style.css" /> <!-- Our custom CSS file -->
+	
+		<title>survey demo with isotope js</title>
+	
+	</head>
+
+	<body>
+
+
+<!--QUESTION ONE-->
+
+		<!-- This is needed to tell isotope.js that we are using a multi-filter -->
+		<div data-js="combination-filters">
+		
+			<!-- The first button group: you need the class "button-group" for the code to work -->
+			<div class="button-group one" data-filter-group="color">
+				<h3 class="instruction">1. Pick your protagonist.</h3><br>
+				<button class="button nonconformist" data-filter=".cat">
+					<img id="nonconformist-idle" src="sprites/nonconformist-idle.gif"><br>
+					<p>NONCONFORMIST</p>
+				</button>
+				<button class="button popular" data-filter=".dog">
+					<img id="popular-idle" src="sprites/popular-idle.gif"><br>
+					<p>POPULAR</p>
+				</button>
+				<button class="button underdog" data-filter=".hamster">
+					<img src="sprites/underdog-idle.gif"><br>
+					<p>UNDERDOG</p>
+				</button>
+			</div>
+
+
+
+<!--QUESTION TWO-->
+
+			<!-- NONCONFORMIST
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-nonconformist">
+				<h3 class="instruction">2. Give them a personality.</h3>
+				<button>
+					<img id="nonconformist-strong" src="sprites/nonconformist-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<button>
+					<img id="nonconformist-dork" src="sprites/nonconformist-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<button>
+					<img id="nonconformist-cool" src="sprites/nonconformist-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+			</div>
+
+			<!-- POPULAR
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-popular">
+				<h3 class="instruction">2. Give them a personality.</h3>
+				<button>
+					<img id="popular-strong" src="sprites/popular-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<button>
+					<img id="popular-dork" src="sprites/popular-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<button>
+					<img id="popular-cool" src="sprites/popular-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+			</div>
+
+			<!-- UNDERDOG
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-underdog">
+				<h3 class="instruction">2. Give them a personality.</h3>
+				<button>
+					<img id="underdog-strong" src="sprites/underdog-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<button>
+					<img id="underdog-dork" src="sprites/underdog-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<button>
+					<img id="underdog-cool" src="sprites/underdog-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+			</div>
+
+
+
+<!--QUESTION THREE-->
+
+			<!-- NONCONFORMIST
+			The third button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-nonconformist">
+				<h3 class="instruction">3. Make them a hero.</h3>
+				<button>
+					<img id="nonconformist-tragic" src="sprites/nonconformist-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<button>
+					<img id="nonconformist-epic" src="sprites/nonconformist-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<button>
+					<img id="nonconformist-anti" src="sprites/nonconformist-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+			</div>
+
+			<!-- POPULAR
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-popular">
+				<h3 class="instruction">3. Make them a hero.</h3>
+				<button>
+					<img id="popular-tragic" src="sprites/popular-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<button>
+					<img id="popular-epic" src="sprites/popular-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<button>
+					<img id="popular-anti" src="sprites/popular-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+			</div>
+
+			<!-- UNDERDOG
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-underdog">
+				<h3 class="instruction">3. Make them a hero.</h3>
+				<button>
+					<img id="underdog-tragic" src="sprites/underdog-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<button>
+					<img id="underdog-epic" src="sprites/underdog-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<button>
+					<img id="underdog-anti" src="sprites/underdog-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+			</div>
+
+
+
+
+<!--QUESTION FOUR-->
+
+			<!-- NONCONFORMIST
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-nonconformist" data-filter-group="shape">
+				<h3 class="instruction">4. Pick a paranormal attribute.</h3>
+				<button>
+					<img id="nonconformist-vampire" src="sprites/nonconformist-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<button>
+					<img id="nonconformist-vampire" src="sprites/nonconformist-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<button>
+					<img id="nonconformist-sorcerer" src="sprites/nonconformist-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+			</div>
+
+			<!-- POPULAR
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-popular" data-filter-group="shape">
+				<h3 class="instruction">4. Pick a paranormal attribute.</h3>
+				<button>
+					<img id="popular-werewolf" src="sprites/popular-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<button>
+					<img id="popular-vampire" src="sprites/popular-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<button>
+					<img id="popular-idle" src="sprites/popular-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+			</div>
+
+			<!-- PARANORMAL
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-underdog" data-filter-group="shape">
+				<h3 class="instruction">4. Pick a paranormal attribute.</h3>
+				<button>
+					<img id="underdog-vampire" src="sprites/underdog-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<button>
+					<img id="underdog-vampire" src="sprites/underdog-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<button>
+					<img id="underdog-sorcerer" src="sprites/underdog-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+			</div>
+
+
+
+
+
+
+			<!--The reset button: clicking on this will refresh the page, see script.js (lines 22-24) to see how the code works-->
+			<button class="reset"> 
+				RESTART 
+			</button>
+
+
+			<!--All Possible Results to be filtered based on the questions above-->
+			<!--The class, grid, is needed to make the divs inside be filtered-->
+			<!--The class, grid, is the styling for the entire area-->
+			<!--the classes, black/white/red and cat/dog/hamster are data filters from the button groups above-->
+			<!--the class, result, is the stylings of all the divs-->
+			<!--the class, color-shape, is a combination filter from the data-filter-group from the button groups above. This is needed for the isotope library to remember what the user selected in the first button group.-->
+			<div class="grid final"> 
+				<div class="color-shape result black cat">A Black Cat!</div>
+				<div class="color-shape result red cat">A Red Cat!</div>
+				<div class="color-shape result white cat">A White Cat!</div>
+				<div class="color-shape result black dog">A Black Dog!</div>
+				<div class="color-shape result red dog">A Red Dog!</div>
+				<div class="color-shape result white dog">A White Dog!</div>
+				<div class="color-shape result black hamster">A Black Hamster!</div>
+				<div class="color-shape result red hamster">A Red Hamster!</div>
+				<div class="color-shape result white hamster">A White Hamster!</div>
+			</div>
+
+		</div> <!-- end of data-js div that is suppose to wrap around everything that's related to the survey's functions -->
+
+
+	<!-- This is how we link the javascript files, instead of at the top. Yeah, this is weird. -->
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> <!-- Default jquery library: do not touch -->
+	<script src="js/isotope-docs.min.js?6"></script> <!-- The isotope.js library: do not touch -->
+	<script src="js/script.js"></script> <!-- Our custom jQuery file -->
+
+	</body>
+
+</html>
